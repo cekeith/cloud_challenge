@@ -1,0 +1,59 @@
+
+
+body {
+    background-image: url("http://www.clipartbest.com/cliparts/Kin/eyg/Kineyg4RT.svg");
+    background-color: #cccccc;
+    background-size: cover;
+}
+
+/*  class and keyframe for cloud one movement */
+.cloud_one {
+  animation-name: cloud_move_one;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cloud_move_one {
+  0% { transform: translateX(1000px);}
+  100% { transform: translateY(-1px) translateX(-300px);}
+}
+
+/*  class and keyframe for cloud two movement */
+
+.cloud_two {
+  animation-name: cloud_move_two;
+  animation-duration: 12s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes cloud_move_two {
+  0% { transform: translateY(200px) translateX(-600px);}
+
+  60% {  opacity: 0.5;}
+  65% {  opacity: 0.75;}
+  70% {  opacity: 1;}
+  100% { transform: translateX(2000px) translateY(100px);}
+}
+
+/*  class and keyframe for sun  movement */
+
+.sun {
+  animation-name: sun_move;
+  animation-duration: 5s;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sun_move {
+  0% {transform: rotate(.1turn);}
+  25% {transform: rotate(-.1turn);}
+  50% {transform: rotate(.1turn);}
+  75% {transform: rotate(-.1turn);}
+  100% {transform: rotate(1turn);}
+
+}
